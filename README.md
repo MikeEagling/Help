@@ -41,4 +41,4 @@ What this guide fails to mention is that the URL given in the `push` instruction
 Once the correct URL has been set the git commands will work as expected.
 
 ## Questions and answers
-
+Software engineering is a complex task that often requires the wisdom of ones peers. Conversely, the Internet is awash with information, not all of it good. There are plenty of online resources of quality information if you know where to find them. [Google](https://www.google.com) is your friend, in as much as learning to use a search engine is an invaluable skill. Accurate search terms greatly increrase the likelyhood of returning the information sought.
