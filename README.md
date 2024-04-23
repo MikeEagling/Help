@@ -36,9 +36,19 @@ The process of creating a SSH passkey is mostly described in [Connecting to GitH
 
 What this guide fails to mention is that the URL given in the `push` instructions is wrong! It can only be used with password authentication, which we now know is disabled. Instead, the remote origin URL must be pointed to GitHub's SSH server:
 
-  	user:~/dev/my_repo$ git remote set-url origin git@github.com:MyUser/my_repo.git
+     user:~/dev/my_repo$ git remote set-url origin git@github.com:MyUser/my_repo.git
 
 Once the correct URL has been set the git commands will work as expected.
+
+### Checking for remote updates
+Making edits to your local depository requires a `push` to the remote server. Conversely, a `git pull` will update the local repository from the remote server. To check if this is necessary (i.e. if changes have been made to the remote repository) use `git status` to find out:
+
+     user:~/dev/my_repo$ git status
+     On branch main
+     Your branch is behind 'origin/main' by 5 commits, and can be fast-forwarded.
+       (use "git pull" to update your local branch)
+     
+     nothing to commit, working tree clean
 
 ## Questions and answers
 Software engineering is a complex task that often requires the wisdom of ones peers. Conversely, the Internet is awash with information, not all of it good. There are plenty of online resources of quality information if you know where to find them. [Google](https://www.google.com) is your friend, in as much as learning to use a search engine is an invaluable skill. Accurate search terms greatly increrase the likelyhood of returning the information sought.
